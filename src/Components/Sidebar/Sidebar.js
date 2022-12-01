@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import {sidebarData} from './SidebarData';
 import './Sidebar.css';
-import { Cross as Hamburger } from 'hamburger-react';
+// import { Cross as Hamburger } from 'hamburger-react';
 const Sidebar = () => { 
-    const  [isOpen, setOpen] = useState(false);
+    // const  [isOpen, setOpen] = useState(false);
 
     // const showSidebar = () => setSidebar(!sidebar)
     return (

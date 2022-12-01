@@ -1,10 +1,10 @@
-.navbar{
+/* .navbar{
     background-color: #060b26;
     height: 80px;
     display: flex;
     justify-content: start;
     align-items: center;
-}
+} */
 
 .menu-bars{
     margin-left: 2rem;
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    top: 5rem;
+    top: 0rem;
     transition: 850ms;
 }
 
@@ -47,6 +47,7 @@
     align-items: center;
     padding: 0 16px;
     border-radius: 4px;
+    margin-top: 9rem;
 }
 
 .nav-text a:hover{

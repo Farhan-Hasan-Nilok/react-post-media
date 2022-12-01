@@ -1,0 +1,23 @@
+.post-body{
+    margin-left: 300px;
+    margin-right: 50px;
+    padding: 50px;
+}
+
+.user-name{
+    /* color: rgba(52, 52, 245, 0.918); */
+    font-size: 16px;
+    color: grey;
+    font-weight: 500;
+}
+
+.post-body .reaction{
+    font-size: 22px;
+    color: rgb(12, 11, 11);
+    display: flex;
+    column-gap: 60px;
+}
+
+.post-body  .reaction p{
+    cursor: pointer;
+}
