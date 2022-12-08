@@ -15,9 +15,6 @@
     font-size: 22px;
     color: rgb(12, 11, 11);
     display: flex;
-    column-gap: 60px;
-}
-
-.post-body  .reaction p{
+    column-gap: 80px;
     cursor: pointer;
 }

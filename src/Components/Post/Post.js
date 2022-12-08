@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './Post.css';
+import * as IoIcons from 'react-icons/io';
 import * as BiIcons from 'react-icons/bi';
+import { Link } from 'react-router-dom';
 const Post = (props) => {
     const {userId, body} = props.postData;
 
     const [user, setUser] = useState([]);
+
+    const[likeColor, setLikeColor] = useState('')
 
     useEffect(() => {
         fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
@@ -18,9 +22,10 @@ const Post = (props) => {
             <p className = 'user-name'><small>@{user.username}</small></p>
             <p>{body}</p>
             <div className='reaction'>
-                <p href='*'><BiIcons.BiLike></BiIcons.BiLike></p>
-                <p href='*'><BiIcons.BiCommentDetail></BiIcons.BiCommentDetail></p>
-                <p href='*'><BiIcons.BiShare></BiIcons.BiShare></p>
+               <IoIcons.IoMdThumbsUp onClick={() => setLikeColor(likeColor ? '' : 'blue')} color = {likeColor}></IoIcons.IoMdThumbsUp>
+                {/* <Link to={`/comments/${userId}`}><BiIcons.BiCommentDetail></BiIcons.BiCommentDetail></Link> */}
+                <BiIcons.BiCommentDetail></BiIcons.BiCommentDetail>
+                <BiIcons.BiShare></BiIcons.BiShare>
             </div>
         </div>
     );
